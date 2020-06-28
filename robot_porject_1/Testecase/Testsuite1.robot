@@ -1,7 +1,7 @@
 *** Settings ***
 
 Library    SeleniumLibrary    
-Suite Setup     log to console         I am insde test suite case
+Suite Setup     log to console         I am insde test suite case case number 2
 Suite Teardown       drop_browser
 
 
@@ -31,7 +31,7 @@ FirstSeleniumTest
 searchGoogle
     Input Text          name=q        uol
     Press Keys          name=q     ENTER 
-    sleep     4   
+    sleep     2   
 
 drop_browser
     Close Browser
