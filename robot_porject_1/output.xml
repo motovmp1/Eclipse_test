@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.8.3 on win32)" generated="20200628 15:38:53.985" rpa="false">
+<suite id="s1" name="Robot Porject 1" source="C:\Users\elsys\Documents\Eclipse_2020\robot_porject_1">
+<suite id="s1-s1" name="Testecase" source="C:\Users\elsys\Documents\Eclipse_2020\robot_porject_1\Testecase">
+<suite id="s1-s1-s1" name="Testsuite1" source="C:\Users\elsys\Documents\Eclipse_2020\robot_porject_1\Testecase\Testsuite1.robot">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>I am insde test suite case</arg>
+</arguments>
+<status status="PASS" starttime="20200628 15:38:54.459" endtime="20200628 15:38:54.460"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="myfirsttest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>hello</arg>
+</arguments>
+<msg timestamp="20200628 15:38:54.464" level="INFO">hello</msg>
+<status status="PASS" starttime="20200628 15:38:54.463" endtime="20200628 15:38:54.464"></status>
+</kw>
+<status status="PASS" starttime="20200628 15:38:54.461" endtime="20200628 15:38:54.465" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstSeleniumTest">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20200628 15:38:54.469" endtime="20200628 15:38:54.470"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20200628 15:38:54.471" level="INFO">Opening browser 'chrome' to base url 'https:google.com'.</msg>
+<status status="PASS" starttime="20200628 15:38:54.470" endtime="20200628 15:39:01.549"></status>
+</kw>
+<kw name="searchGoogle">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>uol</arg>
+</arguments>
+<msg timestamp="20200628 15:39:01.557" level="INFO">Typing text 'uol' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20200628 15:39:01.556" endtime="20200628 15:39:01.736"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200628 15:39:01.738" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20200628 15:39:02.049" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200628 15:39:02.049" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200628 15:39:01.737" endtime="20200628 15:39:04.917"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200628 15:39:08.932" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200628 15:39:04.917" endtime="20200628 15:39:08.932"></status>
+</kw>
+<status status="PASS" starttime="20200628 15:39:01.549" endtime="20200628 15:39:08.933"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>hello</arg>
+</arguments>
+<status status="PASS" starttime="20200628 15:39:08.934" endtime="20200628 15:39:08.935"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>https:google.com</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20200628 15:39:08.936" level="INFO">${url} = https:google.com</msg>
+<status status="PASS" starttime="20200628 15:39:08.935" endtime="20200628 15:39:08.936"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200628 15:39:08.937" level="INFO">https:google.com</msg>
+<status status="PASS" starttime="20200628 15:39:08.936" endtime="20200628 15:39:08.937"></status>
+</kw>
+<status status="PASS" starttime="20200628 15:38:54.467" endtime="20200628 15:39:08.937" critical="yes"></status>
+</test>
+<kw name="drop_browser" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200628 15:39:08.940" endtime="20200628 15:39:11.113"></status>
+</kw>
+<status status="PASS" starttime="20200628 15:39:08.939" endtime="20200628 15:39:11.113"></status>
+</kw>
+<status status="PASS" starttime="20200628 15:38:54.165" endtime="20200628 15:39:11.114"></status>
+</suite>
+<status status="PASS" starttime="20200628 15:38:54.158" endtime="20200628 15:39:11.117"></status>
+</suite>
+<status status="PASS" starttime="20200628 15:38:54.115" endtime="20200628 15:39:11.120"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Robot Porject 1">Robot Porject 1</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Testecase">Robot Porject 1.Testecase</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Testsuite1">Robot Porject 1.Testecase.Testsuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
